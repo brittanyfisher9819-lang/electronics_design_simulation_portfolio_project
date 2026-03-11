@@ -1,0 +1,22 @@
+# Qucs-S Textual Schematic Description
+
+Project: Comparator Threshold Demo
+
+Components:
+- Vdc source for 5 V rail
+- Vin source for analog input
+- RC low-pass filter
+- amplifier block
+- comparator block
+- LED load resistor
+
+Connections:
+1. Analog source -> RC filter
+2. RC filter -> amplifier input
+3. Amplifier output -> comparator positive input
+4. 2.5 V reference -> comparator negative input
+5. Comparator output -> LED branch
+
+Expected behavior:
+- Below threshold: LED output low
+- Above threshold: LED output high

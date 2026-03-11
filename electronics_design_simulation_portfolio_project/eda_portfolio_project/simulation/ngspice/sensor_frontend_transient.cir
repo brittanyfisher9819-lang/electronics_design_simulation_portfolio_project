@@ -1,0 +1,25 @@
+* sensor_frontend_transient.cir
+* Simple sensor conditioning chain for portfolio demonstration
+
+VCC vin 0 DC 12
+VREG vcc 0 DC 5
+VIN sig_in 0 SIN(0.12 0.08 1k)
+
+RIN sig_in filt 1k
+CIN filt 0 100n
+
+* Non-inverting style behavioral amplification approximation
+EAMP amp_out 0 filt 0 12
+
+* Comparator threshold at 2.5 V
+VREF vref 0 DC 2.5
+BOUT comp_out 0 V = V(amp_out) > V(vref) ? 5 : 0
+
+RLOAD comp_out 0 10k
+
+.tran 0.01ms 8ms
+.control
+run
+plot v(sig_in) v(filt) v(amp_out) v(comp_out)
+.endc
+.end

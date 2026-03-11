@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500">
+  <style>
+    .t{font:700 28px Arial, sans-serif; fill:#1f2937}
+    .s{font:500 18px Arial, sans-serif; fill:#4b5563}
+    .b{fill:#eef2ff; stroke:#4f46e5; stroke-width:3; rx:18}
+    .a{stroke:#6b7280; stroke-width:4; fill:none; marker-end:url(#m)}
+    .title{font:800 34px Arial, sans-serif; fill:#111827}
+  </style>
+  <defs>
+    <marker id="m" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#6b7280"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="500" fill="#ffffff"/>
+  <text x="60" y="60" class="title">Sensor Interface Electronics Workflow</text>
+  <rect x="60" y="160" width="220" height="110" class="b"/>
+  <text x="105" y="210" class="t">12 V Input</text>
+  <text x="88" y="240" class="s">Power entry and protection</text>
+
+  <rect x="340" y="160" width="220" height="110" class="b"/>
+  <text x="380" y="210" class="t">5 V Regulator</text>
+  <text x="392" y="240" class="s">Stable supply rail</text>
+
+  <rect x="620" y="160" width="220" height="110" class="b"/>
+  <text x="645" y="210" class="t">Filter + Amplifier</text>
+  <text x="657" y="240" class="s">Condition sensor signal</text>
+
+  <rect x="900" y="160" width="220" height="110" class="b"/>
+  <text x="950" y="210" class="t">Comparator</text>
+  <text x="934" y="240" class="s">Thresholded output</text>
+
+  <path d="M280 215 C315 215, 320 215, 340 215" class="a"/>
+  <path d="M560 215 C590 215, 595 215, 620 215" class="a"/>
+  <path d="M840 215 C870 215, 875 215, 900 215" class="a"/>
+
+  <rect x="620" y="320" width="220" height="90" class="b"/>
+  <text x="685" y="372" class="t">Sensor In</text>
+
+  <path d="M730 320 C730 290, 730 290, 730 270" class="a"/>
+</svg>

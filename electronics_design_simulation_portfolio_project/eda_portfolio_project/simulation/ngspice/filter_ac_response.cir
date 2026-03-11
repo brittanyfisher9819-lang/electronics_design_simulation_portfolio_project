@@ -1,0 +1,11 @@
+* filter_ac_response.cir
+Vin in 0 AC 1
+R1 in out 1k
+C1 out 0 100n
+
+.ac dec 20 10 100000
+.control
+run
+plot db(v(out))
+.endc
+.end
